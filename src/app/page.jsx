@@ -29,8 +29,9 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex gap-2"
+                download
               >
-                <a href="/assets/AliHamzaCv.pdf" download>
+                <a href="/assets/AliHamzaCv.pdf" >
                 <span>Download CV</span>
                 </a>
                 <FiDownload className="text-xl" />
