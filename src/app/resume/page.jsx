@@ -46,15 +46,24 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
-  description: `
-    <ul>
-      <li>Completed a 4-month Full Stack Web Development (MERN Stack) course at <b>Edify College of IT</b>, focusing on building scalable applications using React.js, Node.js, Express.js, MongoDB, and Next.js.</li>
-      <li>Completed a 1-month internship at <b>Inoxitech</b>, where I worked on real-world projects involving frontend development, API integration, and responsive UI design.</li>
-      <li>Currently working as a <b>MERN Stack Developer</b> at <b>Three Arrows</b> with over 3 months of professional experience in developing and optimizing full-stack web applications, improving UI/UX, and implementing backend logic using Node.js and Express.js.</li>
-      <li>Built and deployed multiple live projects including <b>Auth MERN App</b>, <b>Smart Stock AI</b>, <b>Travel App</b>, <b>Inventory Management System</b>, and <b>Hydro Landing Page</b>, showcasing strong skills in full-stack development, deployment, and version control.</li>
+  description: (
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        Completed a 4-month Full Stack Web Development (MERN Stack) course at <b>Edify College of IT</b>, focusing on building scalable applications using React.js, Node.js, Express.js, MongoDB, and Next.js.
+      </li>
+      <li>
+        Completed a 1-month internship at <b>Inoxitech</b>, where I worked on real-world projects involving frontend development, API integration, and responsive UI design.
+      </li>
+      <li>
+        Currently working as a <b>MERN Stack Developer</b> at <b>Three Arrows</b> with over 3 months of professional experience in developing and optimizing full-stack web applications, improving UI/UX, and implementing backend logic using Node.js and Express.js.
+      </li>
+      <li>
+        Built and deployed multiple live projects including <b>Auth MERN App</b>, <b>Smart Stock AI</b>, <b>Travel App</b>, and <b>Hydro Landing Page</b>, showcasing strong skills in full-stack development, deployment, and version control.
+      </li>
     </ul>
-  `,
+  ),
 };
+
 
 // education
 const education = {

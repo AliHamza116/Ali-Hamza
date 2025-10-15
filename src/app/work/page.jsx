@@ -28,6 +28,7 @@ const projects = [
       { name: "MUI" },
       { name: "Framer Motion" },
       { name: "React.js" },
+      { name:""},
       { name: "Node.js" },
       { name: "Express" },
       { name: "Mongodb" },
