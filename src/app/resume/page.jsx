@@ -7,7 +7,7 @@ import {
   SiNextdotjs,
   SiExpress,
   SiMongodb,
-  SiFramerMotion,
+  SiFramer,
 } from "react-icons/si";
 
 // about data
@@ -139,7 +139,7 @@ const skills = {
       name: "mongodb",
     },
     {
-      icon: <SiFramerMotion />,
+      icon: <SiFramer />,
       name: "Framer Motion",
     },
     {
