@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
   SiExpress,
   SiMongodb,
+  SiFramerMotion,
 } from "react-icons/si";
 
 // about data
@@ -136,6 +137,14 @@ const skills = {
     {
       icon: <SiMongodb />,
       name: "mongodb",
+    },
+    {
+      icon: <SiFramerMotion />,
+      name: "Framer Motion",
+    },
+    {
+      icon: <FaGithub />,
+      name: "Github",
     },
   ],
 };
