@@ -114,17 +114,19 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
-                {project.stack.map((item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-accent">
-                      {item.name}
-                      {/* remove the last comma */}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
-                  );
-                })}
-              </ul>
+           <ul className="flex gap-4 flex-wrap">
+  {project.stack.map((item, index) => (
+    <React.Fragment key={index}>
+      <li className="text-xl text-accent inline">
+        {item.name}
+        {index !== project.stack.length - 1 && ","}
+      </li>
+      {/* Break line after React.js */}
+      {item.name === "React.js" && <br />}
+    </React.Fragment>
+  ))}
+</ul>
+
               {/* bordrer */}
               <div className="border border-white/20"></div>
               {/* buttons */}
