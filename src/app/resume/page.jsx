@@ -25,7 +25,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "Fresh",
+      fieldValue: "6 Months",
     },
     {
       fieldName: "Email",
@@ -45,9 +45,15 @@ const about = {
 // Experience data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
-  description:
-    "I completed an intensive hands-on Full Stack Web Development course (MERN Stack) at Edify College of IT from November 2024 to March 2025, where I focused on building scalable full-stack applications using the MERN stack and Next.js. The course emphasized real-world, project-based learning and modern development practices. During this time, I built several key projects including an Auth MERN App (a secure authentication system using JWT, Express, and MongoDB), a Stock Management System (a complete inventory management solution with real-time CRUD operations), a Travel App (a feature-rich travel booking platform built with Next.js and Tailwind CSS), and a Hydro Landing Page (a clean, responsive product landing page showcasing UI/UX best practices). All projects are deployed and live on Vercel, highlighting my practical deployment and version control skills. I am currently seeking my first on-site or remote opportunity to apply and grow my skills in a professional environment.",
+  title: "My Experience",
+  description: `
+    <ul>
+      <li>Completed a 4-month Full Stack Web Development (MERN Stack) course at <b>Edify College of IT</b>, focusing on building scalable applications using React.js, Node.js, Express.js, MongoDB, and Next.js.</li>
+      <li>Completed a 1-month internship at <b>Inoxitech</b>, where I worked on real-world projects involving frontend development, API integration, and responsive UI design.</li>
+      <li>Currently working as a <b>MERN Stack Developer</b> at <b>Three Arrows</b> with over 3 months of professional experience in developing and optimizing full-stack web applications, improving UI/UX, and implementing backend logic using Node.js and Express.js.</li>
+      <li>Built and deployed multiple live projects including <b>Auth MERN App</b>, <b>Smart Stock AI</b>, <b>Travel App</b>, <b>Inventory Management System</b>, and <b>Hydro Landing Page</b>, showcasing strong skills in full-stack development, deployment, and version control.</li>
+    </ul>
+  `,
 };
 
 // education

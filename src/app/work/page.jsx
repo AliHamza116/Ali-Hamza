@@ -18,6 +18,27 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "Inventory Management System",
+    title: "Smart Stock AI",
+    description:
+      " 𝙎𝙢𝙖𝙧𝙩𝙎𝙩𝙤𝙘𝙠 𝘼𝙄, built using the 𝙈𝙀𝙍𝙉 𝙎𝙩𝙖𝙘𝙠 and integrated with 𝙂𝙤𝙤𝙜𝙡𝙚’𝙨 𝙂𝙚𝙢𝙞𝙣𝙞 𝙈𝙤𝙙𝙚𝙡 to bring AI intelligence into business inventory management.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Tailwind.css" },
+      { name: "MUI" },
+      { name: "Framer Motion" },
+      { name: "React.js" },
+      { name: "Node.js" },
+      { name: "Express" },
+      { name: "Mongodb" },
+    ],
+    image: "/assets/work/thumb1.png",
+    live: "https://smart-stockai.vercel.app/",
+    github: "https://github.com/AliHamza116/frontend-stockai.git",
+    github: "https://github.com/AliHamza116/backend-stockai.git",
+  },
+  {
+    num: "02",
     category: "Travel App",
     title: "Travel App",
     description:
@@ -27,39 +48,39 @@ const projects = [
       { name: "Tailwind.css" },
       { name: "Next.js 15" },
     ],
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/thumb2.png",
     live: "https://travel-app-phi.vercel.app/",
     github: "https://github.com/AliHamza116/travel_app.git",
   },
   {
-    num: "02",
+    num: "03",
     category: "Stock Management System",
     title: "Stock Management System",
     description:
       "A full stack project built with Next.js, providing robust functionality for real-time inventory management and seamless CRUD operations.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Next.js 15" }],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/thumb3.png",
     live: "https://deploy-stock-management-system.vercel.app/",
     github: "https://github.com/AliHamza116/deploy-stock-management-system.git",
   },
-  {
-    num: "03",
-    category: "Auth MERN App",
-    title: "Auth MERN App",
-    description:
-      "A full stack authentication system built with MongoDB, Express, React, and Node.js, implementing secure login and signup functionality using JWT and password hashing.",
-    stack: [
-      { name: "Html 5" },
-      { name: "Css 3" },
-      { name: "React.js" },
-      { name: "Node.js" },
-      { name: "Express.js" },
-      { name: "MongoDB" },
-    ],
-    image: "/assets/work/thumb3.png",
-    live: "https://deploy-mern-app-4rkf.vercel.app/signup",
-    github: "https://github.com/AliHamza116/deploy-mern-app.git",
-  },
+  // {
+  //   num: "04",
+  //   category: "Auth MERN App",
+  //   title: "Auth MERN App",
+  //   description:
+  //     "A full stack authentication system built with MongoDB, Express, React, and Node.js, implementing secure login and signup functionality using JWT and password hashing.",
+  //   stack: [
+  //     { name: "Html 5" },
+  //     { name: "Css 3" },
+  //     { name: "React.js" },
+  //     { name: "Node.js" },
+  //     { name: "Express.js" },
+  //     { name: "MongoDB" },
+  //   ],
+  //   image: "/assets/work/thumb4.png",
+  //   live: "https://deploy-mern-app-4rkf.vercel.app/signup",
+  //   github: "https://github.com/AliHamza116/deploy-mern-app.git",
+  // },
 ];
 
 const Work = () => {
