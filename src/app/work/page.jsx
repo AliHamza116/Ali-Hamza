@@ -25,10 +25,8 @@ const projects = [
     stack: [
       { name: "Html 5" },
       { name: "Tailwind.css" },
-      { name: "MUI" },
       { name: "Framer Motion" },
       { name: "React.js" },
-      { name:""},
       { name: "Node.js" },
       { name: "Express" },
       { name: "Mongodb" },
