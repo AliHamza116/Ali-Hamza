@@ -68,7 +68,7 @@ const projects = [
     title: "Stock Management System",
     description:
       "A full stack project built with Next.js, providing robust functionality for real-time inventory management and seamless CRUD operations.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Next.js 15" }],
+    stack: [{ name: "Html 5" }, { name: "Tailwind.css" }, { name: "React.js" }],
     image: "/assets/work/thumb4.png",
     live: "https://deploy-stock-management-system.vercel.app/",
     github: "https://github.com/AliHamza116/deploy-stock-management-system.git",
