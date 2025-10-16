@@ -21,7 +21,7 @@ const projects = [
     category: "Inventory Management System",
     title: "Smart Stock AI",
     description:
-      " 𝙎𝙢𝙖𝙧𝙩𝙎𝙩𝙤𝙘𝙠 𝘼𝙄, built using the 𝙈𝙀𝙍𝙉 𝙎𝙩𝙖𝙘𝙠 and integrated with 𝙂𝙤𝙤𝙜𝙡𝙚’𝙨 𝙂𝙚𝙢𝙞𝙣𝙞 𝙈𝙤𝙙𝙚𝙡 to bring AI intelligence into business inventory management.",
+      " 𝙎𝙢𝙖𝙧𝙩𝙎𝙩𝙤𝙘𝙠 𝘼𝙄, built during my time in Three Arrows Company using the 𝙈𝙀𝙍𝙉 𝙎𝙩𝙖𝙘𝙠 and integrated with 𝙂𝙤𝙤𝙜𝙡𝙚’𝙨 𝙂𝙚𝙢𝙞𝙣𝙞 𝙈𝙤𝙙𝙚𝙡 to bring AI intelligence into business inventory management.",
     stack: [
       { name: "Html 5" },
       { name: "Tailwind.css" },
@@ -53,12 +53,23 @@ const projects = [
   },
   {
     num: "03",
+    category: "Marketing app",
+    title: "Zeta Marketing App",
+    description:
+      "A responsive, dark-themed marketing web application built with React.js and Tailwind CSS during my time at Three Arrows Company.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Next.js 15" }],
+    image: "/assets/work/thumb3.png",
+    live: "https://zeta-dark.vercel.app/",
+    github: "https://github.com/AliHamza116/Zeta.git",
+  },
+  {
+    num: "04",
     category: "Stock Management System",
     title: "Stock Management System",
     description:
       "A full stack project built with Next.js, providing robust functionality for real-time inventory management and seamless CRUD operations.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Next.js 15" }],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/thumb4.png",
     live: "https://deploy-stock-management-system.vercel.app/",
     github: "https://github.com/AliHamza116/deploy-stock-management-system.git",
   },
@@ -95,7 +106,10 @@ const Work = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition:{delay:2.4, duration:0.4, ease: 'easeIn'} }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -114,18 +128,18 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-           <ul className="flex gap-4 flex-wrap">
-  {project.stack.map((item, index) => (
-    <React.Fragment key={index}>
-      <li className="text-xl text-accent inline">
-        {item.name}
-        {index !== project.stack.length - 1 && ","}
-      </li>
-      {/* Break line after React.js */}
-      {item.name === "React.js" && <br />}
-    </React.Fragment>
-  ))}
-</ul>
+              <ul className="flex gap-4 flex-wrap">
+                {project.stack.map((item, index) => (
+                  <React.Fragment key={index}>
+                    <li className="text-xl text-accent inline">
+                      {item.name}
+                      {index !== project.stack.length - 1 && ","}
+                    </li>
+                    {/* Break line after React.js */}
+                    {item.name === "React.js" && <br />}
+                  </React.Fragment>
+                ))}
+              </ul>
 
               {/* bordrer */}
               <div className="border border-white/20"></div>
@@ -187,7 +201,10 @@ const Work = () => {
                 );
               })}
               {/*slider buttons */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnsStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+              <WorkSliderBtns
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnsStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+              />
             </Swiper>
           </div>
         </div>
