@@ -18,8 +18,8 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Inventory Management System",
-    title: "Smart Stock AI",
+    category: "Smart Stock AI",
+    title: "Inventory Management System",
     description:
       " 𝙎𝙢𝙖𝙧𝙩𝙎𝙩𝙤𝙘𝙠 𝘼𝙄, built during my time in Three Arrows Company using the 𝙈𝙀𝙍𝙉 𝙎𝙩𝙖𝙘𝙠 and integrated with 𝙂𝙤𝙤𝙜𝙡𝙚’𝙨 𝙂𝙚𝙢𝙞𝙣𝙞 𝙈𝙤𝙙𝙚𝙡 to bring AI intelligence into business inventory management.",
     stack: [
@@ -53,8 +53,8 @@ const projects = [
   },
   {
     num: "03",
-    category: "Marketing app",
-    title: "Zeta Marketing App",
+    category: "Zeta Marketing Theme",
+    title: "Marketing app",
     description:
       "A responsive, dark-themed marketing web application built with React.js and Tailwind CSS during my time at Three Arrows Company.",
     stack: [{ name: "Html 5" }, { name: "Tailwind.css" }, { name: "React.js" }],
