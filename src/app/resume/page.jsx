@@ -26,7 +26,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "I’m not just a developer — I’m a problem solver, a creative thinker, and a continuous learner. With a strong foundation in the MERN stack and real-world experience through projects, I bring ideas to life through clean, efficient, and scalable code.I don’t just build websites; I build solutions that make an impact. Whether it's debugging a tricky issue or crafting seamless user experiences, I bring energy, curiosity, and dedication to every line of code. I’m now looking for the next challenge where I can contribute, collaborate, and create with purpose.",
+    "I’m not just a developer — I’m a problem solver, a creative thinker, and a continuous learner. With a strong foundation in the MERN stack, Shopify App Development and real-world experience through projects, I bring ideas to life through clean, efficient, and scalable code.I don’t just build websites; I build solutions that make an impact. Whether it's debugging a tricky issue or crafting seamless user experiences, I bring energy, curiosity, and dedication to every line of code. I’m now looking for the next challenge where I can contribute, collaborate, and create with purpose.",
   info: [
     {
       fieldName: "Name",
@@ -128,7 +128,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Proficient in modern web & App development technologies with a strong command over the MERN stack, Next.js, and responsive UI design.",
+    "Proficient in modern web development technologies with a strong command over the MERN stack, Next.js, Responsive UI design and Shopify App Development.",
   skillList: [
     {
       icon: <FaHtml5 />,
