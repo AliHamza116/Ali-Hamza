@@ -7,30 +7,30 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Full Stack (MERN / Next.js)",
     description:
-      "I build fully responsive and modern websites tailored to your brand and business goals.",
+    "Delivering end-to-end applications using MERN stack, Next.js, and pgsql database.",
     href: "",
   },
   {
     num: "02",
-    title: "FRONT END",
+    title: "Front-End Development",
     description:
-      "Building sleek, interactive UIs with React.js, Tailwind CSS, and Next.js.",
+    "Creating modern and responsive interfaces using React.js, Next.js, Framer motion and Tailwind CSS.",
     href: "",
   },
   {
     num: "03",
-    title: "BACK END",
+    title: "Back-End Development",
     description:
-      "Creating robust server-side logic with Node.js, Express, MongoDB and Next.js",
+    "Developing robust server-side logic with Node.js, Express.js, REST APIs, and GraphQL.",
     href: "",
   },
   {
     num: "04",
-    title: "MERN STACK",
+    title: "Shopify App Development",
     description:
-      "Developing full-stack applications with the MERN stack and Next.js framework.",
+      "Building custom Shopify apps with secure authentication, scalable architecture, and seamless store integrations.",
     href: "",
   },
 ];

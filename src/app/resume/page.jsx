@@ -8,6 +8,7 @@ import {
   FaReact,
   FaNodeJs,
   FaGithub,
+  FaServer,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -16,6 +17,9 @@ import {
   SiMongodb,
   SiFramer,
   SiCplusplus,
+  SiGraphql,
+  SiPostgresql,
+  SiShopify,
 } from "react-icons/si";
 
 // about data
@@ -34,7 +38,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "6 Months",
+      fieldValue: "7+ Months",
     },
     {
       fieldName: "Email",
@@ -51,30 +55,41 @@ const about = {
   ],
 };
 
-// Experience data
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description: (
-    <ul className="list-disc pl-5 space-y-2">
-     <li>
-  Currently working as a <b>MERN Stack Developer</b> at{" "}
-  <b>Three Arrows</b> since <b>August 2025</b>, contributing to
-  full-stack web development, UI/UX optimization, and performance
-  improvements.
-</li>
-<li>
-  Completed a 1-month internship as a <b>MERN Stack Developer</b> at{" "}
-  <b>Inoxitech</b> in <b>July 2025</b>, gaining hands-on experience in
-  frontend development, API integration, and responsive UI design.
-</li>
-<li>
-  Built and deployed multiple live projects including{" "}
-  <b>Smart Stock AI</b>, <b>Travel App</b>, <b>Zeta Marketing Theme</b>,
-  and <b>Inventory Management System</b>, showcasing strong skills in
-  full-stack development, deployment, and version control.
-</li>
+    <ul className="list-disc pl-5 space-y-3">
+      <li>
+        <b>Kineteck — Full Time</b>
+        <br />
+        <b>
+          Jr. MERN Stack Developer | Shopify App Developer (Nov 2025 – Present)
+        </b>
+        <br />
+        Developed custom Shopify apps using React.js, Node.js, and Express.js.
+        Integrated Shopify APIs (GraphQL) and worked with pgSQL database while
+        writing clean, reusable code.
+      </li>
 
+      <li>
+        <b>Three Arrows — Internship</b>
+        <br />
+        <b>Full Stack Web Developer (Aug 2025 – Oct 2025)</b>
+        <br />
+        Built responsive web applications with React & Next.js and developed
+        REST APIs using Node.js and Express.js. Created reusable UI components.
+      </li>
+
+      <li>
+        <b>Innoxitech — Internship</b>
+        <br />
+        <b>MERN Stack Developer (June 2025 – July 2025)</b>
+        <br />
+        Developed responsive web pages using React.js and Tailwind CSS,
+        optimized performance, and followed clean front-end development
+        practices.
+      </li>
     </ul>
   ),
 };
@@ -87,14 +102,14 @@ const education = {
     "Recognized as a highly intelligent and exceptional student, consistently demonstrating brilliance, critical thinking, and academic excellence throughout the educational journey.",
   items: [
     {
-      institution: "Edify College Of IT",
-      degree: "Full Stack Web Development",
-      duration: "2025",
-    },
-    {
       institution: "Govt. Municipal Graduate College (GCUF)",
       degree: "Pursuing BS Computer Science (BSCS)",
       duration: "2022 - 2026",
+    },
+    {
+      institution: "Edify College Of IT",
+      degree: "Full Stack Web Development",
+      duration: "2025",
     },
     {
       institution: "Heaven Computer College Khurrianwala",
@@ -113,7 +128,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Proficient in modern web development technologies with a strong command over the MERN stack, Next.js, and responsive UI design.",
+    "Proficient in modern web & App development technologies with a strong command over the MERN stack, Next.js, and responsive UI design.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -128,16 +143,16 @@ const skills = {
       name: "javascript",
     },
     {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
       icon: <SiTailwindcss />,
       name: "tailwind.css",
+    },
+    {
+      icon: <SiFramer />,
+      name: "Framer Motion",
+    },
+    {
+      icon: <FaReact />,
+      name: "react.js",
     },
     {
       icon: <FaNodeJs />,
@@ -148,12 +163,28 @@ const skills = {
       name: "express.js",
     },
     {
+      icon: <FaServer />,
+      name: "REST APIs",
+    },
+    {
+      icon: <SiGraphql />,
+      name: "graphql",
+    },
+    {
       icon: <SiMongodb />,
       name: "mongodb",
     },
     {
-      icon: <SiFramer />,
-      name: "Framer Motion",
+      icon: <SiPostgresql />,
+      name: "pgsql database",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "next.js",
+    },
+    {
+      icon: <SiShopify />,
+      name: "shopify app",
     },
     {
       icon: <FaGithub />,
