@@ -30,7 +30,7 @@ const services = [
     num: "04",
     title: "Shopify App Development",
     description:
-      "Building custom Shopify apps with secure authentication, scalable architecture, and seamless store integrations.",
+      "Building Embedded Shopify apps with secure authentication, scalable architecture, and seamless store integrations.",
     href: "",
   },
 ];

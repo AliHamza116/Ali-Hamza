@@ -38,7 +38,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "7+ Months",
+      fieldValue: "9+ Months",
     },
     {
       fieldName: "Email",
@@ -67,7 +67,7 @@ const experience = {
           Jr. MERN Stack Developer | Shopify App Developer (Nov 2025 – Present)
         </b>
         <br />
-        Developed custom Shopify apps using React.js, Node.js, and Express.js.
+        Developed Embedded Shopify apps using React.js, Node.js/Remix, and Express.js.
         Integrated Shopify APIs (GraphQL) and worked with pgSQL database while
         writing clean, reusable code.
       </li>
@@ -75,21 +75,12 @@ const experience = {
       <li>
         <b>Three Arrows — Internship</b>
         <br />
-        <b>Full Stack Web Developer (Aug 2025 – Oct 2025)</b>
+        <b>Full Stack Web Developer (July 2025 – Oct 2025)</b>
         <br />
         Built responsive web applications with React & Next.js and developed
         REST APIs using Node.js and Express.js. Created reusable UI components.
       </li>
-
-      <li>
-        <b>Innoxitech — Internship</b>
-        <br />
-        <b>MERN Stack Developer (June 2025 – July 2025)</b>
-        <br />
-        Developed responsive web pages using React.js and Tailwind CSS,
-        optimized performance, and followed clean front-end development
-        practices.
-      </li>
+     
     </ul>
   ),
 };
@@ -102,7 +93,7 @@ const education = {
     "Recognized as a highly intelligent and exceptional student, consistently demonstrating brilliance, critical thinking, and academic excellence throughout the educational journey.",
   items: [
     {
-      institution: "Govt. Municipal Graduate College (GCUF)",
+      institution: "GC University Faisalabad",
       degree: "Pursuing BS Computer Science (BSCS)",
       duration: "2022 - 2026",
     },
