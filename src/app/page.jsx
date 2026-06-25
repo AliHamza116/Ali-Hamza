@@ -20,7 +20,7 @@ const Home = () => {
               <br /> <span className="text-accent">Ali Hamza</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experience and i am proficient
+              BS Computer Science Graduate From GC University Fasialabad. I excel at crafting elegant digital experience and i am proficient
               in various programmming language and technologies.
             </p>
             {/* btn and socials */}
