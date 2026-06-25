@@ -20,13 +20,15 @@ import {
   SiGraphql,
   SiPostgresql,
   SiShopify,
+  SiPrisma,
+  SiReactrouter,
 } from "react-icons/si";
 
 // about data
 const about = {
   title: "About me",
   description:
-    "I’m not just a developer — I’m a problem solver, a creative thinker, and a continuous learner. With a strong foundation in the MERN stack, Shopify App Development and real-world experience through projects, I bring ideas to life through clean, efficient, and scalable code.I don’t just build websites; I build solutions that make an impact. Whether it's debugging a tricky issue or crafting seamless user experiences, I bring energy, curiosity, and dedication to every line of code. I’m now looking for the next challenge where I can contribute, collaborate, and create with purpose.",
+    "I’m not just a developer — I’m a problem solver, a creative thinker, and a continuous learner. With a strong foundation in the MERN stack, Shopify App Development and real-world experience through projects, I bring ideas to life through clean, efficient, and scalable code.I don’t just build applications. I build solutions that make an impact. Whether it's debugging a tricky issue or crafting seamless user experiences, I bring energy, curiosity, and dedication to every line of code. I’m now looking for the next challenge where I can contribute, collaborate, and create with purpose.",
   info: [
     {
       fieldName: "Name",
@@ -38,7 +40,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "9+ Months",
+      fieldValue: "1+ Years",
     },
     {
       fieldName: "Email",
@@ -59,28 +61,28 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description: (
-    <ul className="list-disc pl-5 space-y-3">
+    <ul className="list-disc pl-5 space-y-3 marker:text-[#00FF99]">
       <li>
-        <b>Kineteck — Full Time</b>
+        <b style={{ color: "#00FF99" }}>Kineteck — Full Time</b>
         <br />
-        <b>
+        <b style={{ color: "#FFFFFF" }}>
           Jr. MERN Stack Developer | Shopify App Developer (Nov 2025 – Present)
         </b>
         <br />
-        Developed Embedded Shopify apps using React.js, Node.js/Remix, and Express.js.
-        Integrated Shopify APIs (GraphQL) and worked with pgSQL database while
-        writing clean, reusable code.
+        Developed Embedded Shopify apps using React Router, Remix, React.js,
+        Node.js, and Express.js with Shopify App Template. Integrated Shopify
+        APIs (GraphQL) and worked with Prisma and pgSQL database while writing
+        clean, reusable code.
       </li>
 
       <li>
-        <b>Three Arrows — Internship</b>
+        <b style={{ color: "#00FF99" }}>Three Arrows — Internship</b>
         <br />
-        <b>Full Stack Web Developer (July 2025 – Oct 2025)</b>
+        <b style={{ color: "#FFFFFF" }}>Full Stack Web Developer (July 2025 – Oct 2025)</b>
         <br />
         Built responsive web applications with React & Next.js and developed
         REST APIs using Node.js and Express.js. Created reusable UI components.
       </li>
-     
     </ul>
   ),
 };
@@ -94,8 +96,21 @@ const education = {
   items: [
     {
       institution: "GC University Faisalabad",
-      degree: "Pursuing BS Computer Science (BSCS)",
+      degree: "BS Computer Science (BSCS)",
+      CGPA: "3.5/4.0",
       duration: "2022 - 2026",
+    },
+    {
+      institution: "Govt. Degree College Khurrianwala",
+      degree: "FSC Pre-Engineering",
+      Grade: "A",
+      duration: "2019 - 2021",
+    },
+    {
+      institution: "Govt. High School 100RB",
+      degree: "Matriculation",
+      grade: "A",
+      duration: "2017 - 2019",
     },
     {
       institution: "Edify College Of IT",
@@ -107,11 +122,6 @@ const education = {
       degree: "Certification in MS Office",
       duration: "2021",
     },
-    {
-      institution: "Govt. Degree College Khurrianwala",
-      degree: "FSC Pre-Engineering",
-      duration: "2019 - 2021",
-    },
   ],
 };
 
@@ -119,7 +129,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Proficient in modern web development technologies with a strong command over the MERN stack, Next.js, Responsive UI design and Shopify App Development.",
+    "Proficient in modern development technologies with a strong command over the MERN stack, Next.js, Responsive UI design and Shopify App Development.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -185,6 +195,14 @@ const skills = {
       icon: <SiCplusplus />,
       name: "C++",
     },
+    {
+      icon: <SiPrisma />,
+      name: "Prisma",
+    },
+    {
+      icon: <SiReactrouter />,
+      name: "React Router",
+    },
   ],
 };
 
@@ -226,9 +244,9 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <div className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
-                </p>
+                </div>
               </div>
             </TabsContent>
             {/* education */}
@@ -244,12 +262,22 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 "
+                          className="bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 "
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-xl max-w-[260px] min-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.degree}
                           </h3>
+                          {item.CGPA && (
+                            <p className="text-white/60 text-sm">
+                              CGPA: {item.CGPA}
+                            </p>
+                          )}
+                          {(item.Grade || item.grade) && (
+                            <p className="text-white/60 text-sm">
+                              Grade: {item.Grade || item.grade}
+                            </p>
+                          )}
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
