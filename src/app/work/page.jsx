@@ -65,7 +65,7 @@ const projects = [
       { name: "Tailwind.css" },
       { name: "Next.js 15" },
     ],
-    image: "/assets/work/thumb3.png",
+    // image: "/assets/work/thumb3.png",
     live: "https://travel-app-phi.vercel.app/",
     github: "https://github.com/AliHamza116/travel_app.git",
   },
