@@ -214,10 +214,12 @@ const Work = () => {
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image
+                          key={project.image}
                           src={project.image}
                           fill
+                          sizes="(max-width: 1280px) 100vw, 50vw"
                           className="object-contain"
-                          alt=""
+                          alt={project.title}
                         />
                       </div>
                     </div>
