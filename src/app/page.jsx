@@ -6,6 +6,7 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import TypedText from "@/components/TypedText";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Full Stack Developer</span>
+            <TypedText className="text-xl" />
             <h1 className="h1 mb-6">
               Hello I'm
               <br /> <span className="text-accent">Ali Hamza</span>
