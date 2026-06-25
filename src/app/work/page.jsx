@@ -18,28 +18,46 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Smart Stock AI",
-    title: "Inventory Management System",
+    title: "TrustDash : AI Badges & Summary",
+    category: "Shopify App",
     description:
-      " 𝙎𝙢𝙖𝙧𝙩𝙎𝙩𝙤𝙘𝙠 𝘼𝙄, built during my time in Three Arrows Company using the 𝙈𝙀𝙍𝙉 𝙎𝙩𝙖𝙘𝙠 and integrated with 𝙂𝙤𝙤𝙜𝙡𝙚’𝙨 𝙂𝙚𝙢𝙞𝙣𝙞 𝙈𝙤𝙙𝙚𝙡 to bring AI intelligence into business inventory management.",
+      "	𝙏𝙧𝙪𝙨𝙩𝘿𝙖𝙨𝙝 a Project by 𝙆𝙞𝙣𝙚𝙩𝙚𝙘𝙠 𝙎𝙤𝙡𝙪𝙩𝙞𝙤𝙣𝙨, an AI-powered Shopify app developed at 𝙆𝙞𝙣𝙚𝙩𝙚𝙘𝙠 𝙎𝙤𝙡𝙪𝙩𝙞𝙤𝙣𝙨 alongside my team. Currently live, helping merchants boost trust, conversions, and revenue.",
     stack: [
       { name: "Html 5" },
-      { name: "Tailwind.css" },
-      { name: "Framer Motion" },
+      { name: "CSS" },
       { name: "React.js" },
+      { name: "Polaris" },
       { name: "Node.js" },
       { name: "Express" },
-      { name: "Mongodb" },
+      { name: "GraphQL" },
+      { name: "PostgreSQL" },
     ],
     image: "/assets/work/thumb1.png",
-    live: "https://smart-stockai.vercel.app/",
-    github: "https://github.com/AliHamza116/frontend-stockai.git",
-    github: "https://github.com/AliHamza116/backend-stockai.git",
+    live: "https://apps.shopify.com/trustdash?search_id=0f1d09d5-72af-44f0-b01f-a8e5cc055a4a&surface_detail=trustdash&surface_inter_position=1&surface_intra_position=1&surface_type=search",
   },
   {
     num: "02",
-    category: "Travel App",
+    title: "Smart Stock AI",
+    category: "Inventory Management System",
+    description:
+      "𝙎𝙢𝙖𝙧𝙩𝙎𝙩𝙤𝙘𝙠 𝘼𝙄, is our Final Year Project (FYP), an AI-powered inventory management system built with the 𝙈𝙀𝙍𝙉 𝙎𝙩𝙖𝙘𝙠 and AI Models. It combines real-time market intelligence with inventory analytics to recommend which products businesses should invest in.",
+    stack: [
+      { name: "React.js" },
+      { name: "MUI" },
+      { name: "Framer Motion" },
+      { name: "Node.js" },
+      { name: "Express" },
+      { name: "Mongodb" },
+      { name: "Gemini AI" },
+      { name: "Tavily" },
+    ],
+    image: "/assets/work/thumb2.png",
+    live: "https://smartstockai-fyp.vercel.app/",
+  },
+  {
+    num: "03",
     title: "Travel App",
+    category: "Travel App",
     description:
       "A fully responsive and visually appealing travel App built with Next.js and Tailwind CSS, focusing on intuitive UI/UX and smooth navigation.",
     stack: [
@@ -47,18 +65,18 @@ const projects = [
       { name: "Tailwind.css" },
       { name: "Next.js 15" },
     ],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/thumb3.png",
     live: "https://travel-app-phi.vercel.app/",
     github: "https://github.com/AliHamza116/travel_app.git",
   },
   {
-    num: "03",
-    category: "Zeta Marketing Theme",
+    num: "04",
     title: "Marketing app",
+    category: "Zeta Marketing Theme",
     description:
       "A responsive, dark-themed marketing web application built with React.js and Tailwind CSS during my time at Three Arrows Company.",
     stack: [{ name: "Html 5" }, { name: "Tailwind.css" }, { name: "React.js" }],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/thumb4.png",
     live: "https://zeta-dark.vercel.app/",
     github: "https://github.com/AliHamza116/Zeta.git",
   },
@@ -121,10 +139,14 @@ const Work = () => {
                 {project.num}
               </div>
 
-              {/* project category */}
+              {/* project title */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category}
+                {project.title}
               </h2>
+              {/* project category */}
+              <h3 className="text-[20px] font-semibold text-accent/80 capitalize -mt-4">
+                {project.category}
+              </h3>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
@@ -136,7 +158,7 @@ const Work = () => {
                       {index !== project.stack.length - 1 && ","}
                     </li>
                     {/* Break line after React.js */}
-                    {item.name === "React.js" && <br />}
+                    {item.name === "React.js"}
                   </React.Fragment>
                 ))}
               </ul>
@@ -146,7 +168,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4 ">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -159,18 +181,20 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github && (
+                  <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -192,7 +216,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                           alt=""
                         />
                       </div>
