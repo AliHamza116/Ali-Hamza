@@ -101,16 +101,10 @@ const education = {
       duration: "2022 - 2026",
     },
     {
-      institution: "Govt. Degree College Khurrianwala",
+      institution: "Bise Faisalabad",
       degree: "FSC Pre-Engineering",
       Grade: "A",
       duration: "2019 - 2021",
-    },
-    {
-      institution: "Govt. High School 100RB",
-      degree: "Matriculation",
-      grade: "A",
-      duration: "2017 - 2019",
     },
     {
       institution: "Edify College Of IT",
@@ -118,7 +112,7 @@ const education = {
       duration: "2025",
     },
     {
-      institution: "Heaven Computer College Khurrianwala",
+      institution: "Heaven Computer College ",
       degree: "Certification in MS Office",
       duration: "2021",
     },
