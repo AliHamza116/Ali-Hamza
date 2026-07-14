@@ -97,7 +97,7 @@ const education = {
     {
       institution: "GC University Faisalabad",
       degree: "BS Computer Science (BSCS)",
-      CGPA: "3.5/4.0",
+      CGPA: "3.4/4.0",
       duration: "2022 - 2026",
     },
     {
