@@ -146,6 +146,7 @@ const Contact = () => {
                     <SelectItem value="Web Development">Web Development</SelectItem>
                     <SelectItem value="Front End">Front End</SelectItem>
                     <SelectItem value="Back End">Back End</SelectItem>
+                    <SelectItem value="Shopify App Development">Shopify App Development</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
