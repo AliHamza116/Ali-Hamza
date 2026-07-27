@@ -66,7 +66,7 @@ const experience = {
         <b style={{ color: "#00FF99" }}>Kineteck — Full Time</b>
         <br />
         <b style={{ color: "#FFFFFF" }}>
-          Jr. MERN Stack Developer | Shopify App Developer (Nov 2025 – Present)
+          MERN Stack Developer | Shopify App Developer (Nov 2025 – Present)
         </b>
         <br />
         Developed Embedded Shopify apps using React Router, Remix, React.js,
