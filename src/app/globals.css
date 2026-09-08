@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
@@ -22,5 +25,9 @@
   .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99;
   }
-}
 
+  /* Offset anchor scroll targets so sticky header doesn't cover them */
+  section[id] {
+    scroll-margin-top: 80px;
+  }
+}

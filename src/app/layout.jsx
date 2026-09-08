@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   display: "swap",
-  variable: "--font-jetbrainsMono", // optional if using className instead
+  variable: "--font-jetbrainsMono",
 });
 
 export const metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${jetbrainsMono.className}`}>
-      <Toaster position="top-right" reverseOrder={false} />
+        <Toaster position="top-right" reverseOrder={false} />
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>

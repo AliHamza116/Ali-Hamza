@@ -1,48 +1,82 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "Services",
-    path: "/services",
-  },
-  {
-    name: "resume",
-    path: "/resume",
-  },
-  {
-    name: "work",
-    path: "/work",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
+  { name: "home", path: "/", hash: "home" },
+  { name: "Services", path: "/services", hash: "services" },
+  { name: "resume", path: "/resume", hash: "resume" },
+  { name: "work", path: "/work", hash: "work" },
+  { name: "contact", path: "/contact", hash: "contact" },
 ];
 
 const Nav = () => {
   const pathname = usePathname();
+  const router = useRouter();
+  const isHome = pathname === "/";
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    if (!isHome) return;
+
+    const sectionIds = links.map((l) => l.hash);
+    const observers = [];
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+      rootMargin: "-40% 0px -55% 0px",
+      threshold: 0,
+    });
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [isHome]);
+
+  const handleNavClick = useCallback(
+    (e, link) => {
+      if (isHome) {
+        e.preventDefault();
+        const el = document.getElementById(link.hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+      // else: let Next.js Link handle normal route navigation
+    },
+    [isHome]
+  );
+
+  const isActive = (link) => {
+    if (isHome) return activeSection === link.hash;
+    return link.path === pathname;
+  };
+
   return (
     <nav className="flex gap-8">
-      {links.map((link, index) => {
-        return (
-          <Link
-            href={link.path}
-            key={index}
-            className={`${
-              link.path === pathname && "text-accent border-b-2 border-accent"
-            } capitalize font-medium hover:text-accent transition-all `}
-          >
-            {link.name}
-          </Link>
-        );
-      })}
+      {links.map((link, index) => (
+        <Link
+          href={isHome ? `#${link.hash}` : link.path}
+          key={index}
+          onClick={(e) => handleNavClick(e, link)}
+          className={`${
+            isActive(link) ? "text-accent border-b-2 border-accent" : ""
+          } capitalize font-medium hover:text-accent transition-all`}
+        >
+          {link.name}
+        </Link>
+      ))}
     </nav>
   );
 };
