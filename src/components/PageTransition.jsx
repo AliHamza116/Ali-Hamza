@@ -15,7 +15,7 @@ const PageTransition = ({ children }) => {
             opacity: 0,
             transition: { delay: 1, duration: 0.4, ease: "easeOut " },
           }}
-          className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
+          className="h-screen w-full fixed bg-primary top-0 left-0 pointer-events-none"
         />
       </div>
     </AnimatePresence>

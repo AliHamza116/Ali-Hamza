@@ -53,7 +53,7 @@ const MobileNav = () => {
         e.preventDefault();
         const el = document.getElementById(link.hash);
         if (el) {
-          setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 50);
+          setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 350);
         }
       }
     },

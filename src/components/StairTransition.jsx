@@ -13,7 +13,7 @@ const StairTransition = () => {
     <AnimatePresence mode="wait">
       <motion.div
         key={key}
-        className="h-screen w-screen fixed top-0 left-0 pointer-events-none z-40 flex"
+        className="h-screen w-full fixed top-0 left-0 pointer-events-none z-40 flex"
       >
         <Stairs />
       </motion.div>
