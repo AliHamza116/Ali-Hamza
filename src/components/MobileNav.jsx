@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { useTransition } from "./TransitionContext";
 
 const links = [
   { name: "home", path: "/", hash: "home" },
@@ -18,6 +19,7 @@ const MobileNav = () => {
   const isHome = pathname === "/";
   const [activeSection, setActiveSection] = useState("home");
   const [open, setOpen] = useState(false);
+  const { trigger } = useTransition();
 
   useEffect(() => {
     if (!isHome) return;
@@ -45,6 +47,7 @@ const MobileNav = () => {
 
   const handleNavClick = useCallback(
     (e, link) => {
+      trigger();
       setOpen(false);
       if (isHome) {
         e.preventDefault();
@@ -54,7 +57,7 @@ const MobileNav = () => {
         }
       }
     },
-    [isHome]
+    [isHome, trigger]
   );
 
   const isActive = (link) => {

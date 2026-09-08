@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useTransition } from "./TransitionContext";
 
 const links = [
   { name: "home", path: "/", hash: "home" },
@@ -13,7 +14,7 @@ const links = [
 
 const Nav = () => {
   const pathname = usePathname();
-  const router = useRouter();
+  const { trigger } = useTransition();
   const isHome = pathname === "/";
   const [activeSection, setActiveSection] = useState("home");
 
@@ -46,6 +47,7 @@ const Nav = () => {
 
   const handleNavClick = useCallback(
     (e, link) => {
+      trigger();
       if (isHome) {
         e.preventDefault();
         const el = document.getElementById(link.hash);
@@ -53,9 +55,8 @@ const Nav = () => {
           el.scrollIntoView({ behavior: "smooth" });
         }
       }
-      // else: let Next.js Link handle normal route navigation
     },
-    [isHome]
+    [isHome, trigger]
   );
 
   const isActive = (link) => {
